@@ -1,0 +1,1 @@
+function isprime(n) { for (let i = Math.ceil(Math.sqrt(n)); i > 1; i--) {if(n % i == 0) return false;} return true; } let n = 600851475143; let r = Math.round(Math.sqrt(n)); for(let i = r - 1; i > 1; i--) { if(n % i == 0 && isprime(i)) { console.log(i); break; }}

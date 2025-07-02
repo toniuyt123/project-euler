@@ -1,0 +1,1 @@
+function isprime(n) { for (let i = Math.ceil(Math.sqrt(n)); i > 1; i--) {if(n % i == 0) return false;} return true; } let counter = 1; let i = 3; while (counter < 10001) { if (isprime(i)) counter++; i+=2; } console.log(i-2);
